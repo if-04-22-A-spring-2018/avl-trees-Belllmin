@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{exam}
+
+\usepackage[german, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\pointpoints{per cent}{per cents}
+
+\begin{document}
+
+\begin{center} \fbox{\fbox{\parbox{5.5in}{\centering
+IF.04.22 -- Procedural Programming -- AVL Trees.}}}
+\end{center}
+%\makebox[\textwidth]{Name: \enspace\hrulefill}
+
+%\printanswers
+\begin{questions}
+
+\question {\bf Insertion in a Self-Balancing Tree} \\
+Given the following elements to be inserted into a binary search tree:
+
+10, 16, 22, 18, 34, 47, 33, 32, 8, 6
+
+\begin{parts}
+	\part Show the binary search tree after each step of the insertion. If the tree has to be balanced, mark this, state which case of balance violation is given and how to resolve it, then show how the tree looks like after balancing. If the balancing takes more than one step, describe each step separately.
+	\part After insertion of the elements given above, there is one case of balancing missing. Write this case down, find proper elements to be inserted to trigger this case and show how insertion and balancing are done in this case.
+\end{parts}
+
+\begin{otherlanguage}{german}
+Es seien folgende Elemente gegeben, die in einem selbstbalancierenden binären Suchbaum eingefügt werden sollen.
+
+10, 16, 22, 18, 34, 47, 33, 32, 8, 6
+
+\begin{parts}
+	\part Zeichnen Sie den binären Baum nach jedem eingefügten Element. Wenn der Baum ausbalanciert werden muss, geben Sie an, welche Verletzung der Balance gegeben ist und wie sie gelöst werden kann. Anschließend zeigen Sie, wie der Baum nach der Ausbalancierung aussieht. Falls die Ausbalancierung mehr als einen Schritt benötigt, zeigen Sie auch die Zwischenschritte an.
+	\part Nachdem das letzte Element der Liste oben eingefügt wurde, bleibt noch ein Fall einer Balancierung übrig. Schreiben Sie diesen Fall auf, finden Sie notwendige Elemente, die eingefügt werden müssen um diesen Fall zu erzeugen, zeigen Sie das Einfügen der Elemente und das Ausbalancieren des Baums.
+\end{parts}
+\end{otherlanguage}
+
+\begin{solution}
+10, 16, 22 (SLR), 18, 34, 47 (SLR), 33, 32, 8, 6 (SRR)
+\end{solution}
+\end{questions}
+\end{document}
